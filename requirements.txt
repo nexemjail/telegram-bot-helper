@@ -1,0 +1,7 @@
+pip
+python-telegram-bot
+logging
+watson-developer-cloud
+js2py
+pyexecjs
+
