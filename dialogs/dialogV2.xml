@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialog xsi:noNamespaceSchemaLocation="WatsonDialogDocument_1.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<flow>
+		<folder id="Main" label="Main">
+
+			<output id="output_300001">
+				<prompt>
+					<item>Hello, I'm [BotName]. I will help you with you choise of university. But to do it, I need to read your twitter account. So, please, give me your twitter account in form "@twitter"</item>
+				</prompt>
+				<goto ref="getUserInput_200001"/>
+			</output>
+
+			<getUserInput id="getUserInput_200001">
+
+				<search ref="inputSequence_100004"/>
+				<search ref="inputSequence_100003"/>
+				<search ref="inputSequence_100001"/>
+				<search ref="inputSequence_100002"/>
+				<search ref="inputSequence_100005"/>
+
+				<default>
+					<output>
+						<prompt>
+							<item>Sorry, I did not understand you. May be, you'll try something else?</item>
+						</prompt>
+					</output>
+				</default>
+			</getUserInput>
+
+			<output id="output_300002">
+				<prompt>
+					<item>Do you want to start from the beginning?</item>
+				</prompt>
+				<goto ref="getUserInput_200002"/>
+			</output>
+
+			<getUserInput id="getUserInput_200002">
+				<search ref="inputSequence_100006"/>
+				<default>
+					<output>
+						<prompt>
+							<item>I don't understand!</item>
+						</prompt>
+					</output>
+				</default>
+			</getUserInput>
+
+			<getUserInput id="getUserInput_200003">
+
+				<search ref="inputSequence_100002"/>
+				<search ref="inputSequence_100003"/>
+				<search ref="inputSequence_100004"/>
+				<search ref="inputSequence_100005"/>
+				<search ref="inputSequence_100007"/>
+
+				<default>
+					<output>
+						<prompt>
+							<item>I don't understand, so you can try something else.</item>
+						</prompt>
+					</output>
+				</default>
+			</getUserInput>
+		</folder>
+		<folder id="Library" label="Library">
+			<folder id="inputSequence_100001" comment="Accept/Decline to give twitter account">
+				<input>
+					<grammar>
+						<item>No</item>
+						<item>Never</item>
+						<item>I do not want</item>
+						<item>I don't want</item>
+						<item>I don't want *</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>It's quite sad. I can not help you without this! May be you'll give it to me?</item>
+						</prompt>
+					</output>
+				</input>
+				<input>
+					<grammar>
+						<item>Yes</item>
+						<item>Yep</item>
+						<item>yeah</item>
+						<item>Sure</item>
+						<item>Of course</item>
+						<item>Ok</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>I'm very satisfacted by this. But, sadly, I still don't know your twitter account. May be you'll specify it?</item>
+						</prompt>
+					</output>
+				</input>
+			</folder>
+			<folder id="inputSequence_100002" comment="Questions from user to bot">
+				<input>
+					<grammar>
+						<item>Who are you?</item>
+						<item>Where are you from?</item>
+						<item>Tell about yourself</item>
+						<item>Tell * about yourself</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>I'm bot. My name is [BotName]. I live in the clouds. My main aim is to help you to make one of the most important choices of your life. My teacher told me, that he can get personality portrait of one if he take a look only on a text written by a person. He taught me that. As the technology spreads around the world, I found, that people prefare to share their emotions and thoughts using Twitter. So, I decided to use it and help people to decide where to go in their life. Now, when you know so much about me, can you give me your twitter account?</item>
+						</prompt>
+					</output>
+				</input>
+				<input>
+					<grammar>
+						<item>How to use?</item>
+						<item>$ FAQ </item>
+						<item>What to tell?</item>
+						<item>How * use you?</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>Oh, it's very simple. Just give me your twitter account in form "@twitter", and I will do everything i need to help you. So,would you do it now?</item>
+						</prompt>
+					</output>
+				</input>
+			</folder>
+			<folder id="inputSequence_100003" comment="User gives account">
+				<input>
+					<grammar>
+						<item>! @\w+</item>
+					</grammar>
+					<action varName="TwitterAccount" operator="SET_TO_USER_INPUT"/>
+					<output>
+						<prompt>
+							<item>Ok, I've got it, {TwitterAccount}! Now, wait a second and let me think about the most appropriate place.</item>
+						</prompt>
+					</output>
+				</input>
+				<input>
+					<grammar>
+						<item>[UtilityInputUniversityFound]</item>
+					</grammar>
+					<!--<action varName="UniversityName" operator="SET_TO">Princeton</action>-->
+					<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
+					<output>
+						<prompt>
+							<item>Ok, i finished. I decided, that {UniversityName} is a good place for you! Visit their web-site: {UniversityWebsite} - to know more.</item>
+						</prompt>
+						<goto ref="output_300002"/>
+					</output>
+				</input>
+			</folder>
+			<folder id="inputSequence_100004" comment="Errors handling">
+			</folder>
+			<folder id="inputSequence_100005" comment="Others">
+				<input>
+					<grammar>
+						<item>Hi</item>
+						<item>Hello</item>
+						<item>yo</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>Hello. Nice to meet you! As you may know - time is a money. So, let's spend your time with profit and find best matching university for you. Give me your twitter account in form "@twitter".</item>
+						</prompt>
+					</output>
+				</input>
+				<input>
+					<grammar>
+						<item>$ repeat recomendation</item>
+						<item>$ give * recomendation</item>
+						<item>$ repeat * suggestion</item>
+					</grammar>
+					<if matchType="ALL">
+						<cond varName="UniversityName" operator="HAS_VALUE"/>
+						<output>
+							<prompt>
+								<item>I suggest you to enroll {UniversityName}. Visit their website: {UniversityWebsite} - to know more.</item>
+							</prompt>
+						</output>
+					</if>
+					<if matchType="ALL">
+						<cond varName="UniversityName" operator="IS_BLANK"/>
+						<output>
+							<prompt>
+								<item>I haven't suggested you any university to enroll. Please, specify your twitter account to help me do it.</item>
+							</prompt>
+						</output>
+					</if>
+				</input>
+			</folder>
+			<folder id="inputSequence_100006" comment="Accept/Decline to start from beginning">
+				<input>
+					<grammar>
+						<item>No</item>
+						<item>Never</item>
+						<item>I do not want</item>
+						<item>I don't want</item>
+						<item>I don't want *</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>Ok, you can ask me something, or try and specify another account.</item>
+						</prompt>
+						<goto ref="getUserInput_200003"/>
+					</output>
+				</input>
+				<input>
+					<grammar>
+						<item>Yes</item>
+						<item>Yep</item>
+						<item>yeah</item>
+						<item>Sure</item>
+						<item>Of course</item>
+						<item>Ok</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>Ok! I will preted I don't know you :)</item>
+						</prompt>
+						<prompt>
+							<item>Please, give me your twitter account in form "@twitter".</item>
+						</prompt>
+						<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
+						<action varName="UniversityName" operator="SET_TO_BLANK"/>
+						<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
+
+						<goto ref="getUserInput_200001"/>
+					</output>
+				</input>
+			</folder>
+			<folder id="inputSequence_100007" comment="Retry request from user">
+				<input>
+					<grammar>
+						<item> I want to retry</item>
+						<item> I want to begin again</item>
+						<item> Let me try again</item>
+						<item> $ do it from the start</item>
+					</grammar>
+					<output>
+						<prompt>
+							<item>Ok! Let's do it from the start. Specify your twitter account in form "@twitter".</item>
+						</prompt>
+					</output>
+					<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
+					<action varName="UniversityName" operator="SET_TO_BLANK"/>
+					<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
+
+					<goto ref="getUserInput_200001"/>
+				</input>
+			</folder>
+		</folder>
+		<folder id="Concepts" label="Concepts">
+		</folder>
+	</flow>
+
+	<entities>
+	</entities>
+
+	<constants>
+		<var_folder name="UtilityData">
+			<var name="UtilityInputUniversityFound" type="TEXT" description="Utility input to trigger dialog continuation">anodainioscn121lkn12j3n12o4n123n</var>
+		</var_folder>
+		<var_folder name="ErrorData">
+			<var name="TwitterUserErrorOccured" type="TEXT" description="Constant to trigger the input branch when error occured during communication with twitter">alskcenveo2323uib32inf239c</var>
+			<var name="PINotEnoughWords" type="TEXT" description="Constant to trigger the input branch when there are not enough words for PI to extract personality inforamtion">aosind129d2n0c12e9n019n</var>
+		</var_folder>
+		<var_folder name="BotPersonality">
+			<var name="BotName" type="TEXT" description="Name of the bot">Enhel-bot</var>
+			<var name="BotFullName" type="TEXT" description="Decrypted bot name">Enrolee-Helper bot</var>
+		</var_folder>
+	</constants>
+
+	<variables>
+		<var_folder name="UniversityData">
+			<var name="UniversityName" type="TEXT" description="Name of the university"/>
+			<var name="UniversityWebsite" type="TEXT" description="university website URL"/>
+		</var_folder>
+		<var_folder name="TwitterData">
+			<var name="TwitterAccount" type="TEXT" description="Twitter Account"/>
+		</var_folder>
+		<var_folder name="ErrorMessages">
+			<var name="TwitterErrorMessage" type="TEXT" description="Error message when twitte account hasn't been found"/>
+			<var name="PIErrorMessage" type="TEXT" description="Error message when there is not enough words for PI"/>
+		</var_folder>
+
+	</variables>
+
+</dialog>
