@@ -1,16 +1,12 @@
 from __future__ import unicode_literals, print_function
 import telegram
-from telegram.ext import Updater
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Dispatcher
 import logging
-import os
-import json
-
 from watson_developer_cloud import DialogV1, SpeechToTextV1
 from watson_developer_cloud import PersonalityInsightsV2
 from service_metadata import audio_content_type,\
     CONTINUE_CONSTANT, pi_credentials,dialog_credentials,\
     dialog_id, bot_token
-
 
 __all__ = ['start', 'stop']
 
@@ -44,9 +40,8 @@ def _start(bot, update):
 
     bot.watson_info['conversation_id'] = response['conversation_id']
     bot.watson_info['client_id'] = response['client_id']
-    for line in response['response']:
-        bot.sendMessage(chat_id=update.message.chat_id,
-                        text=line)
+    bot.sendMessage(chat_id=update.message.chat_id,
+                    text='\n'.join(response['response']))
     print('Message sent!')
 
 
@@ -93,41 +88,43 @@ def _echo(bot, update):
             text = response['response']
 
         print('Sening a message')
-        for line in text:
-            bot.sendMessage(update.message.chat_id, text=line)
+        print(str(text))
+        bot.sendMessage(update.message.chat_id, text='\n'.join(text))
     # else:
     #     bot.sendMessage(update.message.chat_id, text="Don't know! Rly, help me and try again!")
         print('Message sent!')
 
 
-    def init_bot():
-        logger = logging.getLogger()
-        logger.setLevel(logging.INFO)
-        bot = telegram.Bot(token=bot_token)
-        updater = Updater(token=bot_token)
-        updater.dispatcher.addTelegramCommandHandler('start', _start)
-        updater.dispatcher.addTelegramMessageHandler(_echo)
-        return updater
+def init_bot():
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    bot = telegram.Bot(token=bot_token)
+    updater = Updater(token=bot_token)
+    start_handler = CommandHandler('start', _start,pass_update_queue=True)
+    updater.dispatcher.addHandler(start_handler)
+    message_handler = MessageHandler([Filters.text], _echo)
+    updater.dispatcher.addHandler(message_handler)
+    return updater
 
 
-    def start_bot(updater):
-        updater.start_polling()
+def start_bot(updater):
+    updater.start_polling()
 
 
-    def stop_bot(updater):
-        updater.stop()
+def stop_bot(updater):
+    updater.stop()
 
 
-    def clear_dispatchers(updater):
-        updater.dispatcher.removeHandler(_start)
-        updater.dispatcher.removeHandler(_echo)
+def clear_dispatchers(updater):
+    pass
 
 
-    def start():
-        updater = init_bot()
-        start_bot(updater)
-        return updater
+def start():
+    updater = init_bot()
+    start_bot(updater)
+    return updater
 
-    def stop(updater):
-        clear_dispatchers(updater)
-        stop_bot(updater)
+
+def stop(updater):
+    clear_dispatchers(updater)
+    stop_bot(updater)

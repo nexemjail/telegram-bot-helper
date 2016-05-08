@@ -1,5 +1,5 @@
 ---
 applications:
-- memory: 128m
+- memory: 500m
   name: tb
   no-route: true
