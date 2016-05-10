@@ -1,0 +1,3 @@
+define([
+    './mainController'
+], function () { })
