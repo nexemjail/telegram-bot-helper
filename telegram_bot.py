@@ -44,7 +44,7 @@ def _start(bot, update):
 
     bot.watson_info['conversation_id'] = response['conversation_id']
     bot.watson_info['client_id'] = response['client_id']
-    for message in response:
+    for message in response['response']:
         bot.sendMessage(chat_id=update.message.chat_id,
                     text=message)
     print('Message sent!')
@@ -109,7 +109,6 @@ def init_bot():
     # logger.setLevel(logging.INFO)
     bot = telegram.Bot(token=bot_token)
     updater = Updater(token=bot_token)
-    updater.dispatcher.handlers = []
     start_handler = CommandHandler('start', _start)
     updater.dispatcher.addHandler(start_handler)
     message_handler = MessageHandler([Filters.text], _echo)
@@ -128,7 +127,6 @@ def stop_bot(updater):
 
 
 def clear_dispatchers(updater):
-    updater.dispatcher.re
     pass
 
 
