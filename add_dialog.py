@@ -5,7 +5,7 @@ if __name__ == '__main__':
     dialog = DialogV1(url=dialog_credentials['url'],
                       username=dialog_credentials['username'],
                       password=dialog_credentials['password'])
-    dialog.delete_dialog('39f93e19-568d-4509-b10e-fba8de8e59f7')
+    dialog.delete_dialog('ba12d884-0f78-4b8a-a987-96aa419273ec')
     dialogs = dialog.get_dialogs()['dialogs']
     for d in dialogs:
         print(d, '\n')
