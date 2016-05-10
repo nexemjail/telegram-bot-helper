@@ -4,9 +4,9 @@ import os
 
 app = Flask(__name__, static_folder='Client')
 
-
-index_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Client')
-angular_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Client', 'libs')
+root_path = os.path.dirname(os.path.abspath(__file__))
+index_path = os.path.join(root_path, 'Client')
+angular_path = os.path.join(root_path, 'Client', 'libs')
 
 
 @app.route('/')
@@ -18,9 +18,9 @@ def root():
 
 @app.route('/<path:path>', methods=['GET'])
 def static_files(path):
-    return send_from_directory('', path)
+    return send_from_directory(root_path, path)
 
 if __name__ == '__main__':
-    # start()
+    start()
     app.run(debug=True)
 
