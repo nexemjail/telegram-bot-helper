@@ -18,7 +18,7 @@
 				<search ref="inputSequence_100001"/>
 				<search ref="inputSequence_100002"/>
 				<search ref="inputSequence_100005"/>
-
+				
 				<default>
 					<output>
 						<prompt>
@@ -215,7 +215,7 @@
 					</grammar>
 					<output>
 						<prompt>
-							<item>Ok! I will preted I don't know you :)</item>
+							<item>Ok! I will pretend I don't know you :)</item>
 						</prompt>
 						<prompt>
 							<item>Please, give me your twitter account in form "@twitter".</item>
@@ -252,7 +252,7 @@
 		<folder id="Concepts" label="Concepts">
 		</folder>
 	</flow>
-
+	
 	<entities>
 	</entities>
 

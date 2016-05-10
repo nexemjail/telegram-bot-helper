@@ -1,0 +1,33 @@
+{
+  "name": "Client",
+  "homepage": "https://github.com/Chugainov/Client",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "KChugainov"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.4",
+    "angular-bootstrap": "latest",
+    "angular-mocks": "latest",
+    "angular-ui-router": "latest",
+    "angular-route": "latest",
+    "angular-loader": "latest",
+    "angular-underscore-module": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "jquery.cookie": "latest",
+    "jquery-ui": "latest",
+    "requirejs": "latest",
+    "underscore": "latest",
+    "angular-permission": "~1.1.0",
+    "angular-local-storage": "~0.2.3",
+    "angular-resource": "latest",
+    "bootstrap-material-design": "~0.5.7",
+    "angular-i18n": "~1.4.8",
+    "angular-animate": "~1.5.3"
+  }
+}

@@ -12,6 +12,8 @@ __all__ = ['start', 'stop']
 
 
 def _init_conversation(bot):
+    print('begin it! Conversation not initialized')
+
     bot.watson_info = dict()
     bot.watson_info['dialog_id'] = dialog_id
     bot.personality_insights = PersonalityInsightsV2(
@@ -22,6 +24,8 @@ def _init_conversation(bot):
     bot.dialog = DialogV1(url=dialog_credentials['url'],
                           username=dialog_credentials['username'],
                           password=dialog_credentials['password'])
+
+    print('Conversation initialized')
 
     # bot.speech_to_text = SpeechToTextV1(url=speech_to_text_credentials['url'],
     #                                     username=speech_to_text_credentials['username'],
@@ -40,6 +44,7 @@ def _start(bot, update):
 
     bot.watson_info['conversation_id'] = response['conversation_id']
     bot.watson_info['client_id'] = response['client_id']
+
     bot.sendMessage(chat_id=update.message.chat_id,
                     text='\n'.join(response['response']))
     print('Message sent!')
@@ -47,12 +52,13 @@ def _start(bot, update):
 
 def _echo(bot, update):
     print('Got a message!')
-    if update.message.text:
+    if update.message.text or True:
         print("I't is a text one!")
         response = bot.dialog.conversation(
             bot.watson_info['dialog_id'],
             update.message.text, bot.watson_info['client_id'],
             bot.watson_info['conversation_id'])
+        print(response)
         text = response['response']
         print('Got a response from Dialog')
 
@@ -96,15 +102,16 @@ def _echo(bot, update):
 
 
 def init_bot():
-    logger = logging.getLogger()
-    logger.setLevel(logging.INFO)
+    # logger = logging.getLogger()
+    # logger.setLevel(logging.INFO)
     bot = telegram.Bot(token=bot_token)
     updater = Updater(token=bot_token)
-    start_handler = CommandHandler('start', _start,pass_update_queue=True)
+    start_handler = CommandHandler('start', _start,)
     updater.dispatcher.addHandler(start_handler)
-    message_handler = MessageHandler([Filters.text], _echo)
+    message_handler = MessageHandler([Filters.text, Filters.command], _echo)
     updater.dispatcher.addHandler(message_handler)
-    return updater
+    print(updater.dispatcher.handlers)
+    return updater, bot
 
 
 def start_bot(updater):
@@ -120,8 +127,11 @@ def clear_dispatchers(updater):
 
 
 def start():
-    updater = init_bot()
+    print('Initing bot')
+    updater, bot = init_bot()
+    print('Bot inited')
     start_bot(updater)
+    print('Bot started')
     return updater
 
 

@@ -1,0 +1,3 @@
+define([
+    './mainService'
+], function () { })
