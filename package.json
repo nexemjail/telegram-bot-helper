@@ -1,1 +1,13 @@
-{}
+{
+  "name": "personality-insights-nodejs",
+  "version": "2.1.0",
+  "description": "A sample NodeJS app that use the Personality Insights service",
+  "author": "KitReal",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-twitter-api": "^1.7.2",
+    "watson-developer-cloud": "^1.2.5"
+  }
+}
