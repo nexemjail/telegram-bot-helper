@@ -2,7 +2,7 @@ import execjs
 
 
 def get_js_object(filename):
-    node = execjs.get('Node')
+    node = execjs.get(execjs.runtime_names.Node)
     with open(filename, 'r') as f:
         code = f.read()
         ctx = node.compile(code)
@@ -18,5 +18,6 @@ def get_personality_by_text(text, ctx):
 
 
 if __name__ == '__main__':
+    a = execjs.runtimes()
     ctx = get_js_object('JS_module.js')
-    print get_personality_by_text(open('texts/obama_text.txt', 'r').read(), ctx)
+    print type(get_personality_by_text(open('texts/obama_text.txt', 'r').read(), ctx))

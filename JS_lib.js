@@ -4,6 +4,7 @@ var twitter = new twitterAPI({
 	consumerSecret: '5GRIwi1laTHBCc2WAvflavE0scvDeGCC4cscjOZq1WPAbBHkBd',
 	callback: ''
 });
+
 var token, secretToken;
 
 function PI_to_array(PI){
@@ -65,6 +66,7 @@ function get_tweets_as_text(account){
 			 requestTokenSecret = requestTokenSecret;
 		};
 	});
+	console.log('got request token '+requestToken);
 	twitter.getAccessToken(requestToken, requestTokenSecret, oauth_verifier, function(error, accessToken, accessTokenSecret, results) {
 		if (error) {
 			console.log(error);
@@ -73,6 +75,7 @@ function get_tweets_as_text(account){
 			secretToken = accessTokenSecret;
 		};
 	});
+	console.log('got access token '+token);
 	twitter.getTimeline("user_timeline", {
 							screen_name: account
 						},
@@ -85,6 +88,7 @@ function get_tweets_as_text(account){
 								text = tweetToContentText(data);
 							};
 						});
+	console.log('got text '+text);
 	return text;
 };
 
