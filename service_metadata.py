@@ -14,6 +14,14 @@ pi_credentials = {
     "username": "601a832f-ba02-48ca-9b9d-cfa459855ee0"
 }
 
+twitter_credentials = {
+    'api_key': "fJedSDUo956Gvd0UdH211vNFa",
+    'api_secret': "eJkL38ziiiOIyRDrT0ph16wPgQeGLZT4RZ1tEyWlJDwOkq8y6O",
+    'access_token_key': "414989099-8S4HqHNbAzhtCYaMbgYWyYxfE0pH97wiMJpy9f5V",
+    'access_token_secret': "jLGIlithObdr7sZwkpfjANRrhoAHE9R3lRiwmxgas4QY6"
+}
+
+
 bot_token = '184561786:AAGT5NJjxPSqTm3P4b30_hmGLhnTzgZV34s'
 
 audio_content_type = 'audio/ogg;codecs=opus'
