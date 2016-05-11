@@ -15,6 +15,13 @@ pi_credentials = {
 }
 
 bot_token = '235797171:AAGfWjxxdNKpeIplEtZ81uZxDT4wCVaE0Iw'
+twitter_credentials = {
+    'api_key': "fJedSDUo956Gvd0UdH211vNFa",
+    'api_secret': "eJkL38ziiiOIyRDrT0ph16wPgQeGLZT4RZ1tEyWlJDwOkq8y6O",
+    'access_token_key': "414989099-8S4HqHNbAzhtCYaMbgYWyYxfE0pH97wiMJpy9f5V",
+    'access_token_secret': "jLGIlithObdr7sZwkpfjANRrhoAHE9R3lRiwmxgas4QY6"
+}
+
 
 audio_content_type = 'audio/ogg;codecs=opus'
 
