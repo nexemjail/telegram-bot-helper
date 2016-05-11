@@ -11,11 +11,14 @@ def get_personality_vector(text):
         username=pi['username'],
         password=pi['password']
     )
-    response = personality_insights.profile(text, accept='text/csv', csv_headers=True)
-    text_data = StringIO(response)
-    data = pandas.read_csv(text_data)
+    try:
+        response = personality_insights.profile(text, accept='text/csv', csv_headers=True)
+        text_data = StringIO(response)
+        data = pandas.read_csv(text_data)
 
-    required_columns = data.columns[2:np.argwhere(data.columns == 'Sunday')].values
-    vectors = data[required_columns].values
-    return vectors[0]
+        required_columns = data.columns[2:np.argwhere(data.columns == 'Sunday')].values
+        vectors = data[required_columns].values
+        return vectors[0]
+    except wdc.WatsonException:
+        return None
 
