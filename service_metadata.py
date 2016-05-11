@@ -13,6 +13,15 @@ pi_credentials = {
     "password": "ud7qdp2c0xK4",
     "username": "601a832f-ba02-48ca-9b9d-cfa459855ee0"
 }
+DATABASE_NAME = 'text_database'
+
+db_credentials = {
+    "username": "910efc03-d5c8-4890-94b5-bae018ff0229-bluemix",
+    "password": "56a797545bb0ad319b5d4150c5e855dd01990e52aa3dcb48dce3d08536b87e2a",
+    "host": "910efc03-d5c8-4890-94b5-bae018ff0229-bluemix.cloudant.com",
+    "port": 443,
+    "url": "https://910efc03-d5c8-4890-94b5-bae018ff0229-bluemix:56a797545bb0ad319b5d4150c5e855dd01990e52aa3dcb48dce3d08536b87e2a@910efc03-d5c8-4890-94b5-bae018ff0229-bluemix.cloudant.com"
+}
 
 bot_token = '235797171:AAGfWjxxdNKpeIplEtZ81uZxDT4wCVaE0Iw'
 twitter_credentials = {
