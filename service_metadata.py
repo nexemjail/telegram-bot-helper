@@ -14,7 +14,7 @@ pi_credentials = {
     "username": "601a832f-ba02-48ca-9b9d-cfa459855ee0"
 }
 
-bot_token = '184561786:AAGT5NJjxPSqTm3P4b30_hmGLhnTzgZV34s'
+bot_token = '235797171:AAGfWjxxdNKpeIplEtZ81uZxDT4wCVaE0Iw'
 
 audio_content_type = 'audio/ogg;codecs=opus'
 
