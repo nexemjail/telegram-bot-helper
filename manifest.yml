@@ -2,4 +2,4 @@
 applications:
 - memory: 500m
   name: tb
-  no-route: true
+  no-route: false

@@ -6,7 +6,7 @@ dialog_credentials = {
     "username": "4dc3f06e-338a-4a5f-978c-be9c1a8bd7d3"
 }
 
-dialog_id = '39f93e19-568d-4509-b10e-fba8de8e59f7'
+dialog_id = '4bd697c7-6568-44c2-8a2d-3528c248a061'
 
 pi_credentials = {
     "url": "https://gateway.watsonplatform.net/personality-insights/api",

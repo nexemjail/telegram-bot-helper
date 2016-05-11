@@ -18,7 +18,7 @@
 				<search ref="inputSequence_100001"/>
 				<search ref="inputSequence_100002"/>
 				<search ref="inputSequence_100005"/>
-
+				
 				<default>
 					<output>
 						<prompt>
@@ -215,16 +215,18 @@
 					</grammar>
 					<output>
 						<prompt>
-							<item>Ok! I will preted I don't know you :)</item>
+							<item>Ok! I will pretend I don't know you :)</item>
 						</prompt>
-						<prompt>
-							<item>Please, give me your twitter account in form "@twitter".</item>
-						</prompt>
-						<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
-						<action varName="UniversityName" operator="SET_TO_BLANK"/>
-						<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
+						<output>
+							<prompt>
+								<item>Please, give me your twitter account in form "@twitter".</item>
+							</prompt>
+							<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
+							<action varName="UniversityName" operator="SET_TO_BLANK"/>
+							<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
 
-						<goto ref="getUserInput_200001"/>
+							<goto ref="getUserInput_200001"/>
+						</output>	
 					</output>
 				</input>
 			</folder>
@@ -240,19 +242,19 @@
 						<prompt>
 							<item>Ok! Let's do it from the start. Specify your twitter account in form "@twitter".</item>
 						</prompt>
+						<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
+						<action varName="UniversityName" operator="SET_TO_BLANK"/>
+						<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
+						<goto ref="getUserInput_200001"/>
 					</output>
-					<action varName="TwitterAccount" operator="SET_TO_BLANK"/>
-					<action varName="UniversityName" operator="SET_TO_BLANK"/>
-					<action varName="UniversityWebsite" operator="SET_TO_BLANK"/>
-
-					<goto ref="getUserInput_200001"/>
+					
 				</input>
 			</folder>
 		</folder>
 		<folder id="Concepts" label="Concepts">
 		</folder>
 	</flow>
-
+	
 	<entities>
 	</entities>
 
