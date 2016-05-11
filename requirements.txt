@@ -1,10 +1,10 @@
-pip
 python-telegram-bot
 logging
 watson-developer-cloud
 pyexecjs
 Flask
-tweepy
 numpy
+scipy
+sklearn
 pandas
-
+tweepy
