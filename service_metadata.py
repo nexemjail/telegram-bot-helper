@@ -14,6 +14,8 @@ pi_credentials = {
     "username": "601a832f-ba02-48ca-9b9d-cfa459855ee0"
 }
 DATABASE_NAME = 'text_database'
+PORTRAITS_DB_NAME = 'portraits_db'
+UNIVERSITIES_DB_NAME = 'universities_db'
 
 db_credentials = {
     "username": "910efc03-d5c8-4890-94b5-bae018ff0229-bluemix",
