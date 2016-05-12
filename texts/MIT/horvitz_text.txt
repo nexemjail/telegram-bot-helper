@@ -1,0 +1,860 @@
+
+I never expected to spend most of my life studying worms. However, when it
+came time for me to choose an area for my postdoctoral research, I was in-
+trigued both with the problems of neurobiology and with the approaches of
+genetics. Having heard that a new “genetic organism” with a remarkably sim-
+ple nervous system was being explored by Sydney Brenner – the microscopic
+soil nematode Caenorhabditis elegans – I decided to join Sydney in his efforts.
+THE CELL LINEAGE
+After arriving at the Medical Research Council Laboratory of Molecular
+Biology (the “LMB”) in Cambridge, England, in November, 1974, I began my
+studies of C. elegans (Figure 1) as a collaboration with John Sulston. John,
+Figure 1. Caenorhabditis elegans adults. Hermaphrodite above, male below. John Sulston took
+these photographs, and I drew the diagrams. Bar, 20 microns. From (2).
+320Figur 2. John White.
+trained as an organic chemist, had become a Staff Scientist in Sydney’s group
+five years earlier. John’s aim was to use his chemistry background to analyze
+the neurochemistry of the nematode. By the time I arrived, John had turned
+his attention to the problem of cell lineage, the pattern of cell divisions and
+cell fates that occurs as a fertilized egg generates a complex multicellular or-
+ganism. John could place a newly hatched C. elegans larva on a glass micro-
+scope slide dabbed with a sample of the bacterium Escherichia coli (nematode
+food) and, using Nomarski differential interference contrast optics, observe
+individual cells within the living animal. In this way, he could follow cells as
+they migrated, divided and, in certain cases, died. That cells died as a normal
+aspect of animal development had been known by developmental biologists
+and neurobiologists for many years, and in 1964 Richard Lockshin and
+Carroll Williams had published a paper (1) in which they referred to such
+naturally-occurring cell death as “programmed cell death.” The study of this
+phenomenon was later to engage a substantial proportion of my scientific ef-
+forts.
+John’s initial analyses of the C. elegans cell lineage were focused on the de-
+veloping larval ventral nervous system. I found his discoveries about the rela-
+tionship between cell lineage and nerve cell fate very exciting: 12 neuronal
+precursor cells underwent the same pattern of cell division, and descendant
+cells with equivalent cell lineage histories in general differentiated into the
+same nerve cell type. For example, the anterior daughter of the posterior
+daughter of each of 12 neuroblasts became motor neurons of a class called
+“AS” by John White (Figure 2), who with Sydney was then defining the com-
+plete anatomy and connectivity of the C. elegans nervous system. I asked John
+Sulston if I could join him in the examination of other aspects of the C. ele-
+gans cell lineage, and to my delight, he said “Yes.”
+321John and I decided that it should be possible to track every cell division
+that occurred during larval development. With the added efforts of Judith
+Kimble, who as a graduate student with David Hirsh at the University of
+Colorado in Boulder was interested in the development of the C. elegans go-
+nad, we did just that. John and I published a description of the complete non-
+gonadal larval cell lineages in 1977 (2). The authorship of that paper was a
+topic of debate between John and me: we each insisted on being second au-
+thor. John was rather unassuming and wanted to be second author to give me
+more credit and visibility. I, knowing that John had done the vast majority of
+the work, believed strongly that he should be first author. We were at a stand-
+still until I had an idea. I knew that John hated writing manuscripts. I told
+him that I would write the paper on the condition that he would be first au-
+thor. We had a deal.
+Two years later, Judith Kimble and David Hirsh described the larval cell lin-
+eages of the gonad (3). John then completed the picture by tracking the pat-
+tern of cell divisions between the single-celled fertilized egg and the newly
+hatched larva. This achievement was far more difficult than what John, Judith
+and I had done previously, in part because the process of embryonic mor-
+phogenesis involves a major cellular rearrangement to generate a worm-
+shaped larva from what was previously a ball of cells. A simple analogy is to
+imagine that you are watching a bowl with hundreds of grapes, trying to keep
+your eye on each grape as it and many others move. John succeeded in fol-
+lowing all 558 nuclei, and this effort (with input from Einhard Schierenberg,
+John White and Nichol Thomson) led to the description of the embryonic
+cell lineage of C. elegans (4). Together, these studies defined the first, and to
+date only, completely known cell lineage of an animal (Figure 3).
+The C. elegans cell lineage, which is essentially invariant among individuals,
+presents many of the problems of developmental biology at the level of reso-
+lution of single cells. The issue now was how to proceed from description to
+mechanism. We discussed two general approaches. The first was based upon
+Figure 3. The complete cell lineage of C. elegans.
+322the classical methods of experimental embryology, involving the removal
+and/or transplantation of particular bits of developing animals. With this di-
+rection in mind, John White began pursuing a modern approach to cell re-
+moval: laser microsurgery. By focusing a laser beam though a microscope
+equipped for Nomarski optics, he could visualize and kill single cells. In this
+way, it would be possible to determine the functions of individual cells. Killing
+a cell in the developing embryo or larva should reveal if that cell influenced
+the developmental fate of another cell. The two Johns and Judith Kimble ap-
+plied this technology to eliminate specific cells and analyze development (5,
+6). They discovered that cell interactions play a substantial role in C. elegans
+development and that the invariance of the C. elegans cell lineage reflects in
+part the invariance of cell interactions.
+CELL LINEAGE GENETICS
+The second approach we considered for the analysis of the mechanisms re-
+sponsible for the C. elegans cell lineage was genetics. Sydney had established
+C. elegans as a genetic system (7). However, we had no idea if there existed
+genes that had specific roles in controlling cell lineage or that controlled spe-
+cific cell lineages. It was possible that mutating any gene that affected one cell
+division would also affect so many other divisions as to lead to an uninter-
+pretable lethality. Even mutations that affected a single cell division could
+well prove to be leaky alleles of genes that act more broadly, e.g., a weak mu-
+tation in any gene involved in cell division presumably would cause a defect
+in the divisions of those cells most sensitive to decreases in the activity of that
+gene. I expressed this concern more optimistically on March 19, 1976, in my
+first presentation of the idea of using genetics to study the worm cell lineage,
+at a combined worm-fly group meeting (“Tea Talk”) at the LMB (Figure 4). I
+Figure 4. My notes for the beginning of a “Tea Talk” I presented on March 19, 1976, to an in-
+formal weekly gathering of the C. elegans and Drosophila researchers at the Cell Biology
+Division of the Medical Research Council Laboratory of Molecular Biology in Cambridge,
+England.
+323suggested that mutants with abnormal lineages could prove useful in two
+ways: first, they would provide a means of eliminating specific cells or sets of
+cells, thus “complement{ing the} laser system”; second, they could reveal as-
+pects of the logic of development, “perhaps.”
+My studies of worm cell-lineage genetics began as another collaboration
+with John Sulston. We looked for mutant animals abnormal in specific aspects
+of behavior and/or morphology and then examined those mutant animals at
+the single-cell level for defects in cellular anatomy. If the number of cells was
+abnormal, we reasoned, an abnormality in the cell lineage might well be re-
+sponsible. We then directly examined cell lineages in such mutants, using the
+same techniques we had used to define the cell lineage of the wild-type ani-
+mal. Because John and I first determined larval as opposed to embryonic cell
+lineages, we began by seeking mutants defective in the larval cell lineages. To
+do so, we considered what biological features the larval cell lineages add to
+the newly hatched animal. A young worm and an adult worm are in general
+very similar. Most of the larval cell lineages are involved in sexual maturation,
+i.e., with the development of the gonad and of the neurons, muscles and vul-
+val cells used for egg laying. For this reason, one approach we took was to
+seek mutants defective in egg laying and ask if these mutants were defective in
+cell lineage.
+In our initial study (8, 9), John and I characterized a set of 24 cell-lineage
+mutants. Five of these mutants had been isolated some years earlier by Sydney
+Brenner in his pioneering screens for mutant worms of any sort. Over the
+years, my laboratory has isolated over 4,000 mutants, many of which are cell
+lineage mutants. In many cases the genes defined by such mutants have
+proved to have specific and interesting effects on the worm cell lineage.
+Heterochronic mutants and the control of developmental timing
+Some C. elegans cell lineage mutants perturb the developmental timing of spe-
+cific aspects of the cell lineage. We called such mutants “heterochronic” and
+regard them as temporal counterparts of spatial homeotic mutants, since they
+transform cell fates in time rather than in space (10). The first heterochron-
+ic mutant, which defined the gene lin-4 (lin, cell lineage abnormal), was iso-
+lated in Sydney Brenner’s laboratory as a morphologically abnormal animal
+by P. Babu (personal communication). lin-4 was characterized collaboratively
+by Marty Chalfie, John Sulston and me (11). (I knew Marty in high school,
+and after a chance encounter in which I told him about C. elegans, he, too,
+joined Sydney’s laboratory as a postdoctoral researcher. Marty has focused his
+continuing studies of C. elegans on the animal’s nervous system and intro-
+duced the jellyfish green fluorescent protein (GFP) as a reporter for gene ex-
+pression and protein localization; GFP is now widely used in many fields of bi-
+ology (12).) More detailed analyses of heterochronic genes have been
+performed by Victor Ambros and Gary Ruvkun, first as postdoctoral fellows
+in my laboratory (10, 13, 14) and later as independent researchers.
+Heterochronic mutations are generally of two classes, as exemplified by their
+effects on cell lineage: retarded mutations cause early developmental events
+324to occur at late developmental times, and precocious mutations cause late de-
+velopmental events to occur at early developmental times (Figure 5). The
+heterochronic genes are major regulators of developmental timing.
+The Ambros and Ruvkun laboratories discovered that two of the hetero-
+chronic genes, lin-4 and let-7, do not encode protein products but rather en-
+code small (21–22 nt) RNAs (15, 16). These RNAs are the founding members
+of a family of RNAs, now called microRNAs, which have proved to be wide-
+spread in biology, with large families not only in C. elegans but also in insects,
+plants and mammals (17–21). MicroRNAs are currently the subject of inten-
+sive study in a rapidly growing and very exciting field.
+Genes that control the generation of cell diversity
+Other cell lineage mutants blocked the generation of cell diversity at specific
+cell divisions. For example, although the cell lineage diagram (Figure 6)
+looks very complicated, the logical decisions that occur in this lineage can be
+depicted much more simply (Figure 6A). In short, we can regard every cell in
+the cell lineage as having a fate. That fate may be to differentiate into a spe-
+cific cell type or to divide in a specific pattern to generate a specific comple-
+ment of descendant cells. At each cell division, a cell with one fate A can be
+said to divide to produce two daughter cells with fates B and C, where in gen-
+eral B and C differ both from each other and also from A. Some of the cell
+lineage mutants we found cause sister cells to be identical instead of different
+or daughter cells to be like their mothers instead of acquiring new fates
+(Figure 6B). If the mutation involved eliminated the activity of a gene, we
+could conclude that the gene is necessary to make sister cells different from
+each other or to make daughter cells different from mother cells, i.e., that the
+gene functions to generate cell diversity during development.
+We have characterized a variety of such cell lineage genes genetically, de-
+velopmentally and molecularly (reviewed in (22, 23)). One of the most inter-
+Figure 5. Heterochronic mutations cause perturbations in the timing of specific develop-
+mental events. 1, 2, 3, and 4 at the left indicate the first through fourth larval stages (L1-L4)
+of C. elegans development, respectively. S1, S2, S3 and S4 indicate stage-specific lineage pat-
+terns normally expressed at the L1-L4 stages, respectively. In retarded mutants, early events
+occur late, e.g., an S1 pattern can be seen at the L2 stage. Conversely, in precocious mu-
+tants, late events occur early, e.g,. an S2 pattern can be seen at the L1 stage. From (13).
+325Figure 6. Every cell can be considered to have a fate, where that fate is either to express a
+particular differentiated state (programmed cell death can be regarded as one such fate)
+or to divide in a particular pattern and generate a particular complement of descendant
+cells. (A) Every cell that divides can be said to have a fate, A, which is to divide to generate
+two daughter cells that have fates B and C, which in general differ from each other and
+from A. (B) In certain cell lineage mutants, mother cells of fate A instead of generating
+daughters with fates B and C generate daughters with fates B and B or fates B and A. Such
+mutants can define genes that function in the generation of cell diversity.
+esting and, I think, most significant findings to emerge from these and our
+other studies of the genetics of the C. elegans cell lineage is that most of these
+genes have counterparts in other organisms, including humans. For example,
+among the worm cell lineage genes we identified to be involved in the gener-
+ation of cell diversity are founding members of the now well known and well
+studied POU (24) and LIM (25) families of transcription factors.
+IDCGs, lin-12 and lin-14
+As we were beginning our studies of genes that affect cell lineage, one issue
+that we faced was how to distinguish genes with direct as opposed to indirect
+roles in controlling a specific cell division or cell fate. In other words, our goal
+was to analyze “important developmental control genes,” which we referred
+to (with amusement) as “IDCGs.” How might we identify genes that directly
+control specific cell fates? We knew that in certain cases these cell fates were
+regulated by cell interactions, i.e. whether a particular cell expressed fate A or
+fate B was determined by the presence or absence, respectively, of a signal
+from another cell. In such cases, any gene needed for the generation, differ-
+entiation or functioning of the signaling cell would be required for the ex-
+pression of fate A, but could be controlling that cell fate only indirectly.
+To address this issue, we decided (e.g., see a subsequent discussion by grad-
+uate student Paul Sternberg and me (26)) that one appropriate focus would
+be genes for which opposite classes of mutations – those that eliminate gene
+activity and those that elevate gene activity – have opposite developmental ef-
+fects. The paradigm indicating that genes with such characteristics are bona
+fide developmental genes had been established by Ed Lewis in his pioneering
+studies of the Drosophila Bithorax gene complex (27, 28). Thus, for the case
+326noted above, we would be particularly interested in genes for which too little
+gene activity caused a cell that normally expresses fate A instead to express
+fate B, while too much gene activity caused a cell that normally expresses fate
+B instead to express fate A. Such genes could not simply be needed for some
+aspect of a process upstream of the cell-fate decision of interest. Rather, such
+genes could be considered to be not only necessary but also sufficient (in cer-
+tain cellular contexts) for the expression of a particular cell fate.
+The first two genes we studied that satisfied this IDCG criterion and, in
+fact, led us to this way of thinking were lin-12 and lin-14. The lin-12 gene was
+analyzed by graduate students Iva Greenwald, Paul Sternberg and Chip
+Ferguson (29–31). Opposite classes of lin-12 mutations result in opposite
+homeotic transformations in cell fates precisely as outlined above. lin-12 in-
+deed proved to be an important developmental control gene. Molecularly
+characterized by Iva Greenwald after she left my laboratory (32), lin-12 was a
+founding member of the LIN-12/Notch family, since shown to control inter-
+cellular signaling in many organisms and to be involved in human cancer
+(33–35). The LIN-12 protein showed regions of sequence similarity to the
+then recently characterized mammalian EGF protein. This finding was one of
+the first indicating that developmental genes from simple animals were strik-
+ingly conserved with human genes. In addition, continuing studies from Iva’s
+laboratory established general principles of LIN-12/Notch signaling (36–38)
+and revealed that this family of proteins interacts with presenilins, making the
+LIN-12/Notch family of substantial interest to investigators studying Alz-
+heimer’s Disease (39).
+lin-14, which was the second heterochronic gene we identified and which
+was characterized at about the same time as lin-12, also fulfilled our IDCG cri-
+terion of having opposite classes of mutations cause opposite biological con-
+sequences: mutations that reduce lin-14 activity lead to precocious develop-
+ment, whereas mutations that elevate lin-14 activity lead to retarded
+development (10). lin-14 proved to play a pivotal role in the control of devel-
+opmental timing (13). All of the other genes we have studied that fulfill our
+IDCG criterion also have proved to be interesting. For example, let-60 en-
+codes a Ras protein and acts as a binary switch in a signal transduction path-
+way of vulval development (40, 41)(see below); egl-10 was a founding member
+of a key class of G protein regulators known as RGS proteins (42); and ced-9
+plays a crucial regulatory role in programmed cell death (43)(see below).
+With hindsight, I think our rationale for choosing candidate IDCGs was
+perfectly reasonable. However, we know now (and suspected then) that many
+genes that do not fulfill this particular IDCG criterion also are of interest and
+importance. It may well be that the detailed and analytic study of most genes
+that affect development in specific ways will be instructive.
+A genetic pathway for organ development
+By studying groups of genes with related effects on the same aspect of the
+worm cell lineage, we have been able to define not only single genes involved
+in specific developmental steps but also extensive gene pathways. For exam-
+327ple, we have studied a set of genes involved in organ development – specifi-
+cally in the development of the vulva of the C. elegans hermaphrodite. The
+vulva defines the opening between the uterus and the external environment
+and is needed for egg laying and for mating with males. Mutants abnormal in
+vulval development were first isolated by Sydney Brenner, and the genes de-
+fined by these and similar mutants were initially characterized collaboratively
+by John Sulston and me. Vulval developmental mutants are of two basic class-
+es (Figure 7) (8, 9). Some mutants lack a vulva, and are called “vulvaless.”
+Because C. elegans is an internally self-fertilizing hermaphrodite, a vulvaless
+mutant generates fertilized eggs but these eggs develop and hatch in utero, af-
+ter which the progeny devour the animal that was both mother and father to
+them. The young larvae are released into the environment, so vulvaless mu-
+tations are not lethal, at least in the genetic sense of causing the inviability of
+a strain. Animals in the second class of vulval developmental mutants have
+multiple ectopic vulva-like structures. Such mutants are called “multivulva.”
+Many of the genes defined by vulvaless and multivulva mutants proved to
+be involved in the cell interactions that specify worm vulval development
+(e.g., (29, 44)). Studies of these genes by our laboratory and by other labora-
+tories, particularly that of my ex-graduate student Paul Sternberg, not only es-
+tablished the molecular genetic basis of vulva development but also helped
+elucidate the Ras pathway for signal transduction (40, 41, 45)(reviewed in
+Figure 7. Mutants abnormal in vulva development define two basic classes. (A) Wild type.
+(B) A vulvaless mutant. (C) A multivulva mutant. Arrowhead indicates position of the vul-
+va. Arrows indicate extra vulva-like structures.
+328(46)). Ras had been discovered as a human proto-oncogene (47), and an un-
+derstanding of the normal function of Ras genes as well as of the pathway in
+which Ras genes act has proved fundamental to the fields of developmental
+biology and oncology. Our more recent studies of genes involved in vulval de-
+velopment (48, 49) are revealing how a Retinoblastoma (Rb) tumor suppres-
+sor gene (50) pathway acts to antagonize this Ras oncogene pathway.
+PROGRAMMED CELL DEATH
+As I and members of my new laboratory at MIT were beginning genetic stud-
+ies of the C. elegans cell lineage, one aspect of the cell lineage particularly
+caught my attention: in addition to the 959 cells generated during worm de-
+velopment and found in the adult, another 131 cells are generated but are
+not present in the adult (2, 4). These cells are absent because they undergo
+programmed cell death. This phenomenon of naturally-occurring cell death
+had long been observed as a feature of animal development (e.g., (1, 51, 52))
+and seemed a fundamental but essentially unexplored area of developmental
+biology. Furthermore, programmed cell death is a striking feature of nervous
+system development (e.g., 105 of the 131 programmed cell deaths in C.
+elegans are in the nervous system), and it was neurobiology that had first at-
+tracted me to C. elegans. In addition, Kerr, Wyllie and Curie in 1972 (53) had
+suggested, based upon ultrastructural studies of dying cells, that the mecha-
+nisms responsible for naturally-occurring developmental cell death might also
+be involved in the cell deaths seen during tissue homeostasis as well as in
+untreated malignant neoplasms and in some cases of therapeutically-induced
+tumor regression. They noted that the process of cell death in all of these
+cases is characterized by a series of specific structural changes, and they
+named this process “apoptosis,” a term that has become widely used and is
+often considered to be synonymous with programmed cell death.
+It seemed likely that we could apply the approaches we were taking to study
+the C. elegans cell lineage to analyze programmed cell death. In particular,
+from the cell lineage we knew that specific cells with diverse developmental
+origins undergo programmed cell death at specific times during develop-
+ment and that programmed cell death is characterized by a series of specific
+morphological changes. Thus, we could think of programmed cell death as a
+cell fate, much like other cell fates, such as differentiating into a muscle cell
+or a serotonergic neuron. If so, we reasoned, there should be genes that con-
+trol both the decision to express that fate and the execution (so to speak) of
+the fate itself.
+The first cell-death gene, nuc-1
+The first gene to be identified that affects C. elegans programmed cell death
+was discovered by John Sulston in his initial search for mutants defective in
+the cell lineages of the ventral nervous system, the first cell lineages he stud-
+ied (54). John was screening for animals abnormal in the number of cells in
+the ventral nervous system. To visualize these cells, he used Feulgen DNA
+329staining. John observed that in one mutant individual DNA-positive pycnotic
+bodies were located precisely in positions where there should have been
+prior programmed cell deaths. He showed that this mutant is defective in the
+degradation of DNA in cells undergoing programmed cell death and named
+the gene defined by this mutant nuc-1 (nuclease abnormal), because it con-
+trols the activity of a DNA endonuclease.
+ced-1 and ced-2, two genes needed for the engulfment of cell corpses during
+programmed cell death
+Next, Ed Hedgecock, then a postdoctoral researcher at the LMB, identified
+two genes important for the engulfment of cell corpses by neighboring cells
+during programmed cell death (55). This process of engulfment, or phago-
+cytosis, normally removes dying cells from the body of the animal. Ed named
+these two genes ced-1 and ced-2, for cell death abnormal.
+The killer gene ced-3
+In my laboratory, we were interested in identifying genes responsible either
+for causing cells to die during programmed cell death or for deciding which
+cells are to live and which are to die by programmed cell death. As an ap-
+proach, we decided to seek mutants abnormal either in the presence or in
+the pattern of programmed cell deaths. However, using Nomarski optics to vi-
+sualize programmed cell deaths was problematic – dying cells are rapidly en-
+gulfed, so that at any given developmental stage very few if any cell deaths can
+be seen. Following by direct observation the process of cell death in living lar-
+vae or embryos is too slow to allow for an efficient mutant hunt. Instead, be-
+ginning soon after my 1978 arrival at MIT, we performed mutant hunts using
+the nuc-1 mutant to allow the visualization of cell deaths. We obtained a vari-
+ety of mutants with abnormalities in patterns of cells deaths, but in each case
+the abnormalities proved to reflect more general defects in cell lineage. For
+example, in lin-22 mutants five rather than one programmed cell death occur
+along each side of the second stage larva; the sources of these extra cell
+deaths proved to be the lateral blast cells V1, V2, V3 and V4, which normally
+do not generate dying cells but in lin-22 mutants are all transformed to ex-
+press the fate of V5, which normally generates one cell that undergoes pro-
+grammed cell death (56). Thus, the fundamental role of lin-22 seemed to be
+in specifying the fates of V1-4, not in determining which cells live and which
+die. It is worth noting that this understanding of lin-22 would have been dif-
+ficult to attain in the absence of the ability to study at single-cell resolution
+the C. elegans cell lineage. No mutants specific for defects in programmed cell
+death were isolated from our nuc-1 screens.
+The ced-1 and ced-2 mutants of Hedgecock et al. (55) offered us a more
+powerful approach. In ced-1 and ced-2 mutants, dying cells initiate the process
+of programmed cell death but are not engulfed, so that cell corpses persist in
+an intermediate stage that is easily visualized in living individuals using
+Nomarski optics. Visualizing programmed cell deaths in living individuals is
+far more efficient for a genetic screen than examining fixed and DNA-stained
+330specimens, as we were doing in our screens with nuc-1 mutants. Specifically,
+our nuc-1 screens required establishing lines of animals, so that if a fixed and
+stained mutant animal of interest was identified the mutation responsible
+could be recovered in a living sibling of the mutant animal. By contrast, if a
+mutation were identified in a ced-1 mutant background using Nomarski optics
+to visualize programmed cell deaths, the individual carrying that mutation
+could be picked and used to establish a mutant strain. We could screen many
+more ced-1 animals than nuc-1 clones of animals. Thus, our idea was to muta-
+genize ced-1 animals and look for mutants with abnormalities in the presence
+or in the pattern of programmed cell deaths as seen with Nomarski optics. In
+this way, we hoped to be able to identify mutants in which the process of pro-
+grammed cell death had not been initiated or in which the pattern of pro-
+grammed cell deaths was altered. We were encouraged to suspect that such
+mutants would exist based upon our prior success in isolating cell-lineage mu-
+tants with highly specific defects.
+Hilary Ellis (Figure 8), a graduate student in the laboratory, undertook this
+mutant hunt. Although ced-1 and ced-2 had not yet been described in any pub-
+lication, Ed Hedgecock generously sent Hilary a ced-1 mutant to use in her
+screen. Such an open sharing of both information (we knew all about Ed’s re-
+sults prior to publication) and resources (he sent us his unpublished mutant)
+has been a characteristic of the C. elegans field since its beginning and has, I
+believe, allowed the field to blossom in a highly efficient, rapid and enjoyable
+fashion. Hilary mutagenized ced-1 animals and found a mutant in which no
+cell corpses could be seen (Figure 9). We named the gene defined by this mu-
+tant ced- 3. In a series of experiments, Hilary demonstrated that if ced-3 activi-
+ty is reduced or eliminated by mutation, essentially all 131 cells that normally
+die instead survive (57, 58). Leon Avery, a postdoctoral researcher in my lab-
+oratory, later introduced the term “undead” to refer to such surviving cells
+Figure 8. Hilary Ellis and her daughter
+Alina.
+331Figure 9. Programmed
+cell death does not occur
+in a ced-3 mutant. (A). A
+ced-1 mutant, defective in
+the engulfment of dying
+cells, contains persisting
+cell corpses (arrows). (B)
+A ced-1 and ced-3
+double mutant, in which
+there is no programmed
+cell death, does not con-
+tain cell corpses. The tri-
+angles indicate marker
+cells present in both ani-
+mals. Bar, 10 microns.
+From (58).
+and showed that at least one undead cell is sufficiently normal to be able to
+function as a motor neuron and act in feeding behavior (59).
+These findings indicated that the activity of the gene ced-3 is required for
+cells to die by programmed cell death. This discovery was key, as it demon-
+strated that programmed cell death requires the function of a specific gene
+and hence that programmed cell death is an active biological process, analo-
+gous to other fundamental biological processes, such as cell division, cell mi-
+gration and cell differentiation. Based upon our discovery of ced-3, we pro-
+posed our first draft of a genetic pathway for programmed cell death: ced-3
+acts to trigger programmed cell death upstream of ced-1 and ced-2, which con-
+trol the engulfment of cell corpses and themselves act upstream of nuc-1,
+which degrades the DNA in dying cells (57).
+The second killer gene, ced-4
+In what I thought to be a completely unrelated line of study, graduate student
+Carol Trent (Figure 10A) in my laboratory was studying an aspect of C. elegans
+behavior, egg-laying. (Our studies of the behavior of egg-laying were begun as
+a consequence of my having isolated egg-laying defective mutants while seek-
+ing cell lineage mutants and finding that some of the mutants were abnormal
+in egg-laying despite being normal in cell lineage and having a normal com-
+plement of the cells used for egg-laying.) Carol and technician Nancy Tsung
+(Figure 10B) isolated and characterized a set of 145 mutants defective in
+egg-laying and found that one of these mutants is egg-laying defective
+because it lacks the HSN motor neurons, which innervate the vulval muscles
+and drive egg-laying (60). We named the gene defined by this mutant egl-1,
+for egg-laying abnormal.
+332Figure 10. (A) Carol Trend. (B) Nancy Tsung.
+Why are the HSN neurons missing in egl-1 mutants? We considered two pos-
+sibilities. First, perhaps the HSN neurons are never generated. Second, per-
+haps they are generated but once generated they die. This latter alternative
+struck us as plausible, because in his studies of the C. elegans cell lineage John
+Sulston had found that in males the cells homologous to the HSN neurons
+undergo programmed cell death (4). We reasoned that if in fact HSN neurons
+were dying by programmed cell death in egl-1 hermaphrodites, then a ced-3
+mutation, which blocks programmed cell death, should block this HSN death
+and restore both HSN neurons and egg laying to an egl-1 mutant. Hilary tested
+this possibility by constructing a ced-3; egl-1 double mutant. She found that in-
+deed a mutation in ced-3 suppresses the effects of the egl-1 mutation (Table 1).
+Thus, the absence of HSN neurons in egl-1 mutant animals seemed likely to
+reflect a defect in which the HSN neurons instead of surviving undergo pro-
+grammed cell death. John Sulston directly confirmed that this was the case by
+examining the embryonic cell lineage of egl-1 mutants.
+Table 1. A ced-3 mutation, which prevents programmed cell death, suppresses the ef-
+fects of an egl-1 (gain-of-function) mutation. Adapted from (58).
+wild type
+egl-1
+ced-3; egl-1
+HSN present? Egg-laying
+defective?
+yes
+no
+yes no
+yes
+no
+333This observation proved very useful, as it suggested a very efficient ap-
+proach for the isolation of more ced-3-like mutants: look for mutations that
+suppress the egg-laying defect of egl-1 mutants. At least some such mutations
+should act by preventing programmed cell death. Both Hilary Ellis and grad-
+uate student Chand Desai (Figure 11) sought egl-1 suppressors. Chand’s goal
+was different from Hilary’s, as Chand wanted mutations that allowed egg lay-
+ing in the absence of HSN neurons and thus could define genes responsible
+for aspects of neuronal wiring. Chand isolated a mutant that restored HSN
+neurons and proved to be defective in a new gene with properties that Hilary
+showed to be essentially identical to those of ced-3. We named this gene ced-4
+and added it to the genetic pathway for programmed cell death (58).
+Programmed cell death involves a process of cellular suicide
+Graduate student Junying Yuan (Figure 12A) then asked whether the ced-3
+and ced-4 killer genes act within the cells that die or elsewhere in the body of
+the animal, for example to control humoral factors. To address this issue, she
+performed genetic mosaic analyses, in which in single animals some cells are
+mutant (e.g., lack ced-3 function) while others are wild-type (e.g., have ced-3
+function), and asked whether the genetic identity of a cell that normally dies
+(ced- 3(+) vs. ced-3(–)) determines its fate (programmed cell death vs. survival).
+Junying’s observations suggested that both ced-3 and ced-4 act within the dying
+cells themselves (61). These findings indicated that, to this extent at least,
+programmed cell death is a process of cellular suicide.
+Both CED-3 and CED-4 have human counterparts that function in programmed
+cell death
+Junying Yuan cloned the ced-4 gene and discovered that the CED-4 protein
+was novel, i.e. in its sequence unlike any other protein known at the time. We
+Figure 11. Chand Desai.
+334Figure 12. (A) Junying Yuan. (B) Shai Shaham.
+published a paper entitled “The Caenorhabditis elegans cell death gene ced-4 en-
+codes a novel protein and is expressed during the period of extensive pro-
+grammed cell death” (62). Some years later, in 1997, a protein similar to
+CED-4 was identified. The laboratory of Xiaodong Wang had characterized
+biochemically an in vitro system for cell death and identified a factor, which
+they called Apaf-1 (apoptotic protease activating factor), with a domain with
+significant similarity to CED-4 (63). Thus, Apaf-1 is a pro-apoptotic human
+protein similar in both sequence and function to the C. elegans programmed
+cell death killer gene CED-4.
+Just after cloning ced-4 and five years before Apaf-1 was identified, Junying
+Yuan also cloned the ced-3 gene and characterized it molecularly in collabo-
+ration with graduate student Shai Shaham (Figure 12B). ced-3, too, was novel,
+not matching any sequence in the databases at that time. However, we could
+not see publishing a paper with the title “Another C. elegans cell death gene
+encodes a novel protein.” So we did not. Instead, we waited. Each day or two
+for nearly two years, Shai searched the database, until finally there was a hit
+(Figure 13)(64). The CED-3 protein is similar in sequence to an enzyme that
+had been purified biochemically (65, 66) by two pharmaceutical companies
+interested in human inflammatory disease. This enzyme is the protease in-
+terleukin-1-beta converting enzyme, or ICE, which converts the pro-form of
+the cytokine interleukin-1-beta into the active molecule. CED-3 and ICE
+proved to be the founding members of a family of cysteine proteases now
+known as caspases (67).
+Based upon this finding and upon additional observations (68) made by
+Printout from the database search done by Shai Shaham on April 27, 1992, re-
+vealing that CED-3 is similar to the human protein interleukin-1-beta converting enzyme.
+The search was done using the BLAST network service of the U.S. National Center for
+Biotechnology Information.
+Ding Xue, a postdoctoral researcher in our laboratory, we concluded that
+CED-3 functions to kill cells during programmed cell death in C. elegans by
+acting as a cysteine protease. We suggested that, given the existence of ICE,
+ICE or some other CED-3/ICE-like cysteine proteases likely function in pro-
+grammed cell death in mammals. Junying Yuan, in research performed in
+her new independent laboratory at the Massachusetts General Hospital, pro-
+vided support for this hypothesis in a paper (69) published back-to-back with
+our joint paper reporting the similarity between CED-3 and ICE. Extensive
+further support for the hypothesis that caspases act in programmed cell death
+in mammals has been provided by studies from many laboratories, which
+have identified at least 14 mammalian caspases and shown that many func-
+tion in programmed cell death, e.g., (67, 70).
+ced-9 protects cells against programmed cell death
+To identify additional genes involved in C. elegans programmed cell death,
+graduate student Ron Ellis (Figure 14A) focused on one particular cell that
+undergoes programmed cell death, the sister of the serotonergic NSM neu-
+ron in the pharynx, the feeding organ. Ron used Nomarski optics to seek mu-
+tants in which the NSM sister cell survives. He obtained two classes of mu-
+tants: (1) mutants in which the NSM sister survives but other dying cells still
+die, and (2) mutants in which not only the NSM sisters but also all other dy-
+ing cells survive. The former set of mutants helped us begin to analyze how
+specific cells decide whether to live or die (71). Five of the six mutants in the
+latter set were defective in ced-3 or ced-4. However, one mutant in which there Ron Ellis. (B) Michael Hengartner.
+was no programmed cell death was different, and defined a new gene. We
+named this gene ced-9 (43).
+Genetic studies of ced-9 by Ron Ellis and subsequently by Michael
+Hengartner (Figure 14B), also a graduate student in my laboratory, revealed
+that our original ced-9 mutation caused a gain rather than a loss of ced-9 func-
+tion and, furthermore, that a loss of ced-9 function had the opposite effect
+(43). Specifically, whereas a mutation that results in a gain of ced-9 function
+causes cells that should die by programmed cell death instead to live, a muta-
+tion that results in a loss of ced-9 function causes cells that should live to die by
+programmed cell death. These studies indicated that ced-9 controls the deci-
+sion between cell survival and programmed cell death (Figure 15) and estab-
+lished that unlike ced-3 and ced-4, which promote programmed cell death, the
+gene ced-9 protects cells against programmed cell death.
+Michael Hengartner cloned ced-9 and discovered (72) that it encodes a
+protein with similarities to the product of the human proto-oncogene Bcl-2
+(B cell lymphoma), the misexpression of which had been shown to cause fol-
+licular lymphoma (73–75). Prior studies of Bcl-2 had indicated that Bcl-2
+could protect cells in the mammalian immune system from undergoing apop-
+tosis (e.g., (76, 77)). Thus, the molecularly similar genes ced-9 and Bcl-2 can
+protect cells against programmed cell death and apoptosis, respectively, sup-
+porting the idea that the morphological changes of apoptosis are effected by
+the same mechanisms as those responsible for programmed cell death.
+Subsequent studies have revealed a family of CED-9/Bcl-2-like proteins in-
+volved in programmed cell death in mammals (e.g., (78, 79)).
+The thrill of discovery and the path to scientific visibility
+People sometimes ask, when does a scientist feel that “aha!” thrill of discov-
+ery? In the case of our studies of programmed cell death, my biggest thrill was
+probably on February 12, 1992 (Figure 16). That was the day that Michael
+Hengartner obtained the CED-9 sequence, searched the database and found
+Bcl-2 at the top of the similarity list. We immediately realized that the pathway
+of cell-death genes we were studying in C. elegans was very likely to be similar
+to the pathway that controls apoptosis/programmed cell death in humans.
+Fax sent to me on February 12, 1992, by Michael Hengartner informing me that
+the sequence of CED-9 is similar to that of the human proto-oncogene Bcl-2. Barbara
+Osborne, a fellow cell-death researcher, was a visiting scientist in our laboratory on a sab-
+batical leave.
+338Publication dates can belie scientific history. We published the similarity
+between CED-3 and ICE before we published the similarity between CED-9
+and Bcl-2. Yet our discovery of the similarity between CED-3 and ICE was the
+later discovery, made on April 27, 1992. After the discovery of the similarity
+between CED-9 and Bcl-2, I immediately and very broadly discussed this find-
+ing. Bcl-2 was already of great interest in the field of oncology. I believe that
+the fact that Bcl-2 proved to look like a worm protein that antagonized pro-
+grammed cell death helped convince researchers that the function of Bcl-2
+was to antagonize the cell death process. I also believe that this similarity
+made the worm cell-death pathway suddenly a topic of major interest in the
+biomedical community, as this pathway was no longer simply an abstract for-
+malism derived from complicated genetic studies of a microscopic soil-
+dwelling roundworm but rather a framework for a process fundamental to
+human biology and human disease.
+The back-to-back publication of the discoveries that CED-3 looks like a hu-
+man protease (64) and that CED-3 expressed in mammalian cells could in-
+duce those cells to undergo programmed cell death (69) revealed for the first
+time a mechanistic basis of the process of programmed cell death. This work
+also strongly suggested that mammalian cells contain the machinery for cel-
+lular suicide. The day these two papers were published (November 19, 1993),
+I received telephone calls from scientists at five pharmaceutical companies
+wanting to know how these findings could best be used to help them develop
+novel drugs. There was no question that the biomedical community had be-
+come interested in C. elegans programmed cell death.
+The core molecular genetic pathway for programmed cell death
+At about the time that we found the similarity between CED-9 and Bcl-2,
+David Vaux, working at Stanford University with Irv Weissman and Stuart
+Kim, demonstrated that when expressed as a transgene in C. elegans human
+Bcl-2 can protect against programmed cell death in worms (80). Michael
+Hengartner in my laboratory confirmed this finding and further established
+that human Bcl-2 can substitute for worm ced-9 in a ced-9 mutant (72). These
+observations strongly indicated that ced-9 and Bcl-2 act to prevent pro-
+grammed cell death by similar mechanisms and, furthermore, since Bcl-2 can
+substitute for ced-9 in worms, that ced-9 and Bcl-2 act in similar molecular ge-
+netic pathways.
+By analyzing the genetic interactions among ced-9, ced-3 and ced-4, Michael
+Hengartner and Shai Shaham helped define the genetic pathway for the
+core, killing step of programmed cell death in C. elegans: ced-3 kills; ced-4 kills
+by promoting the killing activity of ced-3; and ced-9 protects by preventing ced-4
+from promoting the killing activity of ced-3 (43, 81). This pathway raised the
+question, what regulates ced-9 ? The answer proved to be the gene egl-1, which
+I discussed above as the gene that can mutate to cause the HSN motor neu-
+rons to undergo programmed cell death. In a series of genetic studies, post-
+doctoral fellow Barbara Conradt (Figure 17) discovered that the normal func-
+tion of egl-1 is not specific to the HSN neurons but rather is needed for
+essentially all programmed cell deaths, like ced-3 and ced-4 (82). However,
+whereas ced-3 and ced-4 act downstream of ced-9, the egl-1 gene acts upstream
+of ced-9. These findings suggest a pathway in which egl-1 kills by preventing
+ced-9 from preventing ced-4 from promoting the killing activity of ced-3.
+Barbara cloned egl- 1, found that it encodes a small protein of 91 amino acids
+with similarity to the so-called BH3-only members of the Bcl-2 family. She
+showed that the EGL-1 and CED-9 proteins interact physically. A variety of
+studies, mostly by others, indicated that the CED-9 and CED-4 proteins also
+interact physically, as do the CED-4 and CED-3 proteins. Taken together,
+these observations defined a molecular genetic pathway for programmed cell
+death involving a cascade of protein interactions and a predicted conserva-
+tion with mammals (Figure 18).
+The overall molecular genetic pathway for programmed cell death in C. elegans
+In further studies using similar approaches, we and others have analyzed
+events both upstream and downstream of this core pathway. Our current pic-
+ture of the overall molecular genetic pathway for programmed cell death in
+
+C. elegans is shown in Figure 19. First, every cell in the animal must decide
+whether it is to live or die by programmed cell death. We identified two of the
+three genes known to be involved in this decision in a mutant hunt related to
+our studies of the behavior of egg laying. We knew that the neuromodulator
+serotonin was involved in egg laying (83), and graduate student Carol Trent
+and technician Nancy Tsung sought mutants abnormal in the only seroton-
+ergic neurons we knew about at that time, the NSM neurons in the pharynx.
+Carol and Nancy identified two mutants that appeared to have extra NSM
+neurons, and graduate student Ron Ellis found that the extra NSM neurons
+in these mutants were surviving NSM sister cells (71). These mutants defined
+the genes ces-1 and ces-2. Ron Ellis found two additional ces-1 mutants in the
+screen described above in which he looked directly for mutants defective in
+the deaths of the NSM sister cells (71). ces-2 encodes a transcription factor
+similar to the product of the human proto-oncogene HLF (hepatic leukemia
+factor), which has been implicated in acute lymphoblastic leukemia (84). ces-2
+directly represses the transcription of ces-1, which encodes a transcription fac-
+tor of the zinc finger family (85). Based on our studies of ces-2 and ces-1, both
+the oncogenic form of HLF and the human CES-1 counterpart, SLUG, have
+been shown to regulate programmed cell death in mammalian cells, suggest-
+ing that these proteins act in acute lymphoblastic leukemia through effects
+on programmed cell death (86, 87).
+The third gene we have shown to regulate cell-type specific programmed
+cell death in C. elegans is tra-1 (88). The tra-1 gene, like the ces-1 gene, encodes
+a Zn finger transcription factor; the TRA-1 protein is similar to members of
+341the human GLI protein family (89), which has been implicated in glioblas-
+toma (90) and also in the developmental disorder Grieg cephalopolysyn-
+dactyly syndrome (91). tra-1 controls sexual identity in C. elegans; the activity
+of tra-1 is regulated by the ratio of X chromosomes to autosomes, so that it is
+active in hermaphrodites (XX) and inactive in males (X0) (e.g., (92)).
+Barbara Conradt discovered that tra-1 regulates the sexually dimorphic pro-
+grammed cell deaths of the HSN neurons (which survive in hermaphrodites
+and die in males) by repressing the transcripton of the egl-1 BH3-only killer
+gene (88). Her findings suggest that if egl-1 is expressed (as in males, which
+have low TRA-1 repressor activity), the resulting EGL-1 protein binds to the
+CED-9 protein, causing the activation of CED-4 and the subsequent activation
+of CED-3, resulting in cell death. By contrast, if egl-1 is repressed by TRA-1 (as
+in hermaphrodites), HSN neurons survive. Our original egl-1 mutations,
+which result in a gain rather than a loss of egl-1 gene activity, disrupt the TRA-
+1 binding site of egl-1, causing egl-1 to be inappropriately expressed and thus
+the HSN neurons to die in hermaphrodites.
+Overall, our studies of the cell-type specific control of programmed cell
+death indicate that the decision about whether a given cell is to live or die is
+controlled by the actions of specific transcription factors. This finding is con-
+sistent with our hypothesis from many years ago that programmed cell death
+can be regarded as a cell fate, since the expression of many cell fates is speci-
+fied by the actions of and interactions among particular transcription factors.
+The engulfment step of programmed cell death has proved to involve at
+least seven genes that define two parallel and partially redundant signal trans-
+duction pathways responsible for communication between the cell that will
+die and the engulfing cell (Figure 20)(55, 93–99). These two pathways act not
+only in the recognition by engulfing cells of cells that are to die and in con-
+trolling the cytoarchitectural changes necessary for the process of phagocy-
+tosis but also in the killing process itself (100).
+Finally, as shown by my graduate students Yi-Chun Wu and Gillian Stanfield
+(101), the DNA in cells undergoing programmed cell death is degraded (in
+part) by the direct protein product of the first cell-death gene ever identified,
+nuc-1.
+As indicated in Figure 12, most and possibly all of the genes involved in
+programmed cell death in C. elegans have human counterparts, most of which
+have been implicated in programmed cell death in humans and some of
+which have been implicated in human disease. This pathway is clearly incom-
+plete. Unpublished studies by us and by others have identified a number of
+additional genes with roles in programmed cell death, and there are many
+aspects of the pathway that have not been explored fully. There is still much
+to learn about both the genetic pathway and the molecular mechanisms of
+programmed cell death in C. elegans.
+Programmed cell death and human disease
+As the understanding of programmed cell death in C. elegans and in other or-
+ganisms has progressed, more and more human disorders have been shown
+
+Genetic pathways. (B) Diagram of proposed molecular pathways. See text for references.
+to be, or at least strongly suspected to be, caused by abnormalities in pro-
+grammed cell death. The relationship between programmed cell death and
+human disease has been reviewed numerous times (e.g., (102–105)), and
+here I will note only that either too much or too little cell death can cause dis-
+ease. For example, the neurodegenerative diseases – such as Alzheimer’s
+Disease, Parkinson’s Disease, Huntington’s Disease and amyotrophic lateral
+sclerosis or ALS – all involve neuronal cell death. In each case, specific class-
+es of nerve cells die, leading to the particular clinical features of each of these
+neurologic disorders. One major hypothesis today is that the nerve cell
+deaths in some of these disorders are essentially ectopic programmed cell
+deaths, i.e., deaths that use the same mechanisms as those that occur during
+normal development but that for some reason are caused to occur at the
+wrong time, in the wrong place or affecting the wrong cell type. The evidence
+supporting this hypothesis varies among the neurodegenerative disorders,
+and at present is probably strongest for certain retinal degenerations (e.g.,
+(106)). Other disorders characterized by too much cell death and that may
+well involve ectopic programmed cell death include cerebral stroke, traumat-
+ic brain injury, AIDS, myocardial infarction, congestive heart failure, acute
+liver injury and aplastic anemia.
+Conversely, some human disorders involve too little cell death. The num-
+ber of cells in our bodies is defined by an equilibrium of opposing forces: mi-
+tosis adds cells, while programmed cell death removes them. Just as too much
+cell division can lead to a pathological increase in cell number, so can too litt-
+le cell death. Certain cancers, including follicular lymphoma, which can be
+caused by the misexpression in B cells of the CED-9-like proto-oncogene Bcl-2
+(77, 107), are clearly a consequence of too little programmed cell death. It
+343may well be that most cancers involve a misregulation of programmed cell
+death. Similarly, the clinical features of certain autoimmune diseases and viral
+infections are consequences of too little programmed cell death.
+Because of the relationship between programmed cell death and human
+disease, the identification of the genes and proteins that function in the
+process of programmed cell death has provided new targets for possible in-
+tervention in a broad diversity of disorders. My dream is that the pathway we
+have identified for programmed cell death in C. elegans will help lead to bet-
+ter diagnostics, treatments and cures for some of these diseases responsible
+for so much human suffering.
+The principle of biological universality
+One point that emerges from the studies of programmed cell death in C. ele-
+gans and other organisms is the striking similarity of genes and gene pathways
+among organisms that are as superficially distinct as worms and humans.
+Many studies over the past 10 or so years involving C. elegans, yeast, the fruit
+fly Drosophila melanogaster and other simple organisms have repeatedly led to
+analogous findings concerning evolutionary conservation and have estab-
+lished one of the most striking themes of modern molecular biology. I like to
+refer to this theme as “The principle of biological universality,” and it under-
+lies my strong conviction that the rigorous, detailed and analytic study of the
+biology of any organism is likely to lead to findings of importance in the un-
+derstanding of other organisms, including ourselves.
+ACKNOWLEDGMENTS
+First, I thank Sydney Brenner and John Sulston, who are my ex-colleagues, my
+mentors and my good friends, and with whom I have had the enormous plea-
+sure of sharing the 2002 Nobel Prize in Physiology or Medicine. I am grateful
+to Jim Watson, Wally Gilbert and Klaus Weber, in whose combined laboratory
+I worked as a graduate student and who taught me not only how but also why
+to do science. I thank my colleagues at MIT, who have provided a spectacu-
+larly supportive environment that fostered my growth as an independent sci-
+entist. In particular, my department chairs – Boris Magasanik, Gene Brown,
+Maury Fox, Richard Hynes, Phil Sharp, and Bob Sauer – all helped me in
+many ways over the years. Amongst my many wonderful colleagues, Salva
+Luria, David Baltimore and David Botstein particularly stimulated me to
+think, to grow and to appreciate that it is important as a scientist to fulfill a re-
+sponsibility to a greater community.
+I thank my family. My wife Martha Constantine Paton has given me love
+and support, while ensuring that I maintain a perspective on what is impor-
+tant. Martha’s two sons, Chris and Joe Paton, introduced me to the special
+pleasures of family life. My daughter Alexandra Constantine Horvitz con-
+stantly brings me amusement, wisdom and joy, as well as an appreciation for
+biology that goes well beyond what I have ever observed through a micro-
+scope looking at worms. My sister Carol Horvitz-Nutt and her husband Randy
+344Nutt have shared their love and support for many years. Most deeply, I thank
+my parents, Mary and Oscar Horvitz, who raised me to ask “Why?” and
+“How?” and who sustained a belief in me that gave me the confidence to do
+science and more generally to explore all that life has to offer.
+I thank the members of and visitors to my laboratory at MIT, some of
+whom were directly responsible for the research described above and all of
+whom together generated the stimulating and enjoyable environment that
+made such work possible. It is very much their efforts, their insights, and their
+accomplishments that have been recognized. These researchers include
+Namiko Abe, Gwen Acton, Mark Alkema, Ezequiel Alvarez-Saavedra, Victor
+Ambros, Na An, Erik Andersen, Colleen Asbury, Leon Avery, Cori Bargmann,
+Michael Basson, Greg Beitel, Andrew Bellinger, Ala Berdichevsky, Barbara
+Biber, Kris Bieker- Brady, Laird Bloom, Ned Buttner, Scott Cameron, Gordon
+Campbell, Beth Castor, Craig Ceol, Wendy Champness, Fangli Chen, Andrew
+Chisholm, Chantal Christ, Scott Clark, Barbara Conradt, Brian Davies, Ewa
+Davison, Lisa Delissio, Chand Desai, Elizabeth DeStasio, John Doll, Bob
+Edgar, Mary Kaye Edwards, Hilary Ellis, Ron Ellis, Scott Federhen, Chip
+Ferguson, Mike Finney, Bill Fixsen, Brendan Galvin, Gian Garriga, Elad Gil,
+Dorit Ginsberg, Susie Glass, Iva Greenwald, Melissa Harrison, Erika Hartwieg,
+Anna Heineman, Andrew Hellman, Michael Hengartner, Tory Herman,
+Michael Herman, Brad Hersh, Emma Jean Hess, George Hess, Megan Hig-
+ginbotham, Dennis Hom, Michael Huang, Brigitte Huber, Melissa Hunter-
+Ensor, Mike Hurwitz, Ho-Yon Hwang, Yishi Jin, Carl Johnson, Erik Jorgensen,
+Josh Kaplan, Sam Katz, Saechin Kim, Stuart Kim, Michael Koelle, Kerry
+Kornfeld, Michel Labouesse, Eric Lander, Joshua Levin, Chris Li, Leslie
+Lobel, David Lombard, Xiaowei Lu, Andras Madi, Steve McIntire, Marianne
+McPherson, Mark Metzstein, Eric Miska, Mireya Nadal-Vicens, Dan Omura,
+Barbara Osborne, Andrea Page, Joan Park, Dianne Parry, Erica Pascal, Igna-
+cio Perez de la Cruz, Rajesh Ranganathan, Peter Reddien, Niels Ringstad,
+Denise Roberts, Marsha Rosner, Richard Russell, Gary Ruvkun, Hitoshi Sawa,
+Beth Sawin, Hillel Schwartz, Shai Shaham, Liz Speliotes, Gillian Stanfield,
+Kristen Stephens, Michael Stern, Paul Sternberg, Jeff Thomas, Jim Thomas,
+Carol Trent, Nancy Tsung, Nadine Urann, Sander Van den Heuvel, Clem
+Wang, Eve Wolinsky, Yi-Chun Wu, Fang Xie, Ding Xue, Junying Yuan and
+Zheng Zhou.
+I thank the members of the C. elegans research community for establishing
+and maintaining a field that has been friendly, supportive, interactive and
+open in the sharing of data, reagents, techniques and even ideas. In particu-
+lar, Bob Edgar played a pivotal role by founding The Worm Breeder’s
+Gazette, in which unpublished observations and methods have been broadly
+distributed, sometimes long before publication.
+I thank the funding agencies that have supported my research. The
+Muscular Dystrophy Association and the UK Medical Research Council fund-
+ed my initial studies of C. elegans while I was a postdoctoral researcher in
+Sydney Brenner’s laboratory in Cambridge, England. After my move to MIT
+in 1978, my research was funded by the U.S. National Institutes of Health
+345and, beginning in 1988, by the Howard Hughes Medical Institute. I am very
+appreciative of this financial support, which I believe illustrates an important
+point. These agencies funded me to do very basic research at a time where
+neither the generality nor the application of our efforts was at all clear. C.
+elegans was an obscure organism. Genetic studies are often highly abstract,
+and there was no existing technology available to link genetic observations of
+C. elegans with the molecular and biochemical findings being made in studies
+of other organisms. My research did not target any disease, nor did I know if
+the biology we uncovered would be relevant to any organism not closely re-
+lated to C. elegans. Nonetheless, our studies established mechanisms that ap-
+pear to be universal among animals, and our findings may help provide the
+basis for new treatments for a broad variety of human diseases.
+Some important points emerge from these considerations. First, basic re-
+search can lead in unexpected ways to insights of substantial practical impor-
+tance. Time and time again, truly basic studies of simple experimental or-
+ganisms have proved directly relevant to human biology and human disease.
+An investment in such basic studies is an effective investment indeed.
+However, this investment must be made outside of the private sector, by gov-
+ernments and foundations, because only such organizations can act based on
+the fact that discoveries from basic research have a high likelihood of bene-
+fiting humanity, but in ways that cannot be predicted and hence cannot con-
+stitute a robust “business plan.” I thank those responsible for my early support
+who, either for these reasons or perhaps more simply because they believed
+that the pursuit of knowledge is a vital aspect of human culture, saw fit to sup-
+port our studies of the genetics of cell lineage and programmed cell death in
+a microscopic worm.
+I dedicate this lecture to my mother, Mary Horvitz, and to the memory of
+my father, Oscar Horvitz.
