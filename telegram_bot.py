@@ -1,29 +1,23 @@
 from __future__ import unicode_literals, print_function
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Dispatcher
-import logging
 from watson_developer_cloud import DialogV1, SpeechToTextV1
 from watson_developer_cloud import PersonalityInsightsV2
 from service_metadata import audio_content_type,\
     CONTINUE_CONSTANT, pi_credentials,dialog_credentials,\
     dialog_id, bot_token
-
+from personality_extractor import get_personality_vector
+from parse_twitter import get_all_tweets
 __all__ = ['start', 'stop']
 
 
 def _init_conversation(bot):
     print('begin it! Conversation not initialized')
-
     bot.watson_info = dict()
-    bot.watson_info['dialog_id'] = dialog_id
-    bot.personality_insights = PersonalityInsightsV2(
-        url=pi_credentials['url'],
-        username=pi_credentials['username'],
-        password=pi_credentials['password'])
-
     bot.dialog = DialogV1(url=dialog_credentials['url'],
                           username=dialog_credentials['username'],
                           password=dialog_credentials['password'])
+    bot.dialog_id = dialog_id
 
     print('Conversation initialized')
 
@@ -39,11 +33,11 @@ def _start(bot, update):
     print('Init done!')
 
     print('Starting conversation with Dialog')
-    response = bot.dialog.conversation(dialog_id)
+    response = bot.dialog.conversation(bot.dialog_id)
     print('Got a response from dialog! Sending it to client')
 
-    bot.watson_info['conversation_id'] = response['conversation_id']
-    bot.watson_info['client_id'] = response['client_id']
+    bot.conversation_id = response['conversation_id']
+    bot.client_id = response['client_id']
     for message in response['response']:
         bot.sendMessage(chat_id=update.message.chat_id,
                     text=message)
@@ -54,16 +48,16 @@ def _echo(bot, update):
     print('Got a message!')
     print("I't is a text one!")
     response = bot.dialog.conversation(
-        bot.watson_info['dialog_id'],
-        update.message.text, bot.watson_info['client_id'],
-        bot.watson_info['conversation_id'])
+        bot.dialog_id,
+        update.message.text, bot.client_id,
+        bot.conversation_id)
     print(response)
     text = response['response']
     print('Got a response from Dialog')
 
     print('Checking for profile variables')
     variables = bot.dialog.get_profile(
-        bot.watson_info['dialog_id'], bot.watson_info['client_id'])
+        bot.dialog_id, bot.client_id)
     print('Profile variables ' + str(variables))
 
     got_twitter = variables and variables['name_values'] \
@@ -74,25 +68,33 @@ def _echo(bot, update):
             and variables['name_values'][0]['value'].startswith('@')
 
     if got_twitter:
+        for message in text:
+            bot.sendMessage(update.message.chat_id, text=str(message))
+
         print('It\'s twitter!')
-        obama_text = ''
-        with open('texts/obama_text.txt', 'r') as f:
-            obama_text = f.read()
-        response = bot.personality_insights.profile(obama_text)
-        print('Got a response from PI')
-        print('Updating profile variables')
-        response_profile = bot.dialog.update_profile(bot.watson_info['dialog_id'],
-                                                     {'UniversityName': 'Princeton',
-                                                      'UniversityWebsite': 'http://www.princeton.edu/main/'},
-                                                     bot.watson_info['client_id'])
+        # obama_text = ''
+        # with open('texts/obama_text.txt', 'r') as f:
+        #     obama_text = f.read()
 
-        print('Sending continue constant to conversation')
-        response = bot.dialog.conversation(bot.watson_info['dialog_id'],
-                                           CONTINUE_CONSTANT, bot.watson_info['client_id'],
-                                           bot.watson_info['conversation_id'])
-        text = response['response']
-
-    print('Sening a message')
+        tweets = get_all_tweets(update.message.text[1:])
+        print(tweets[:2])
+        feature_vector = get_personality_vector(''.join(tweets))
+        print(feature_vector)
+        if feature_vector:
+            print(feature_vector)
+            print('Updating profile variables')
+            response_profile = bot.dialog.update_profile(bot.dialog_id,
+                                                         {'UniversityName': 'Princeton',
+                                                          'UniversityWebsite': 'http://www.princeton.edu/main/'},
+                                                         bot.client_id)
+            print('Sending continue constant to conversation')
+            response = bot.dialog.conversation(bot.dialog_id,
+                                               CONTINUE_CONSTANT, bot.client_id,
+                                               bot.conversation_id)
+            text = response['response']
+        else:
+            text = "Twitter don't pass minimum requirement of 100 words. Specify another account or"
+    print('Sending a message')
     print(str(text))
     for message in text:
         bot.sendMessage(update.message.chat_id, text=str(message))
