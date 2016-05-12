@@ -3,7 +3,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.externals import joblib
 import os
 from service_metadata import db_credentials
-
+from utils.create_database import select_university_and_features
+import numpy as np
 
 PATH = 'classifier/knn'
 
@@ -12,6 +13,11 @@ def repare_data():
 
 
 def learn():
+
+    portraits, map_ids, universities = select_university_and_features()
+
+    n
+
     knn = KNeighborsClassifier()
     # knn.fit()
     joblib.dump(knn, os.path.join(PATH, 'knn_classifier.jbl'))
