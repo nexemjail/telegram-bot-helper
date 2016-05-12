@@ -25,4 +25,4 @@ def get_personality_vector(text):
 
 if __name__ == '__main__':
     text = open('texts/obama_text.txt', 'r').read()
-    print get_personality_vector(text)
+    print(get_personality_vector(text))

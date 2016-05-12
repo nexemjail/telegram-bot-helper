@@ -1,4 +1,4 @@
-from __future__ import unicode_literals, print_function
+from __future__ import print_function
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Dispatcher
 from watson_developer_cloud import DialogV1, SpeechToTextV1
@@ -8,6 +8,7 @@ from service_metadata import audio_content_type,\
     dialog_id, bot_token
 from personality_extractor import get_personality_vector
 from parse_twitter import get_all_tweets
+from classifier import classify
 __all__ = ['start', 'stop']
 
 
@@ -72,28 +73,36 @@ def _echo(bot, update):
             bot.sendMessage(update.message.chat_id, text=str(message))
 
         print('It\'s twitter!')
-        # obama_text = ''
-        # with open('texts/obama_text.txt', 'r') as f:
-        #     obama_text = f.read()
 
         tweets = get_all_tweets(update.message.text[1:])
-        print(tweets[:2])
-        feature_vector = get_personality_vector(''.join(tweets))
-        print(feature_vector)
-        if feature_vector:
-            print(feature_vector)
-            print('Updating profile variables')
-            response_profile = bot.dialog.update_profile(bot.dialog_id,
-                                                         {'UniversityName': 'Princeton',
-                                                          'UniversityWebsite': 'http://www.princeton.edu/main/'},
-                                                         bot.client_id)
-            print('Sending continue constant to conversation')
-            response = bot.dialog.conversation(bot.dialog_id,
-                                               CONTINUE_CONSTANT, bot.client_id,
-                                               bot.conversation_id)
-            text = response['response']
+        if not tweets:
+            text = tweets
         else:
-            text = "Twitter don't pass minimum requirement of 100 words. Specify another account or"
+            print(tweets[:2])
+            joined_text = ''.join(tweets)
+            print(joined_text)
+            feature_vector = get_personality_vector(joined_text)
+            print(feature_vector)
+            if feature_vector is not None:
+                print(type(feature_vector))
+                print(feature_vector.shape)
+                recommendation = classify(feature_vector)
+                print(recommendation)
+
+                if recommendation:
+                    print(recommendation)
+                    print('Updating profile variables')
+                    response_profile = bot.dialog.update_profile(bot.dialog_id,
+                                                                 {'UniversityName': recommendation['name'],
+                                                                  'UniversityWebsite': recommendation['url']},
+                                                                 bot.client_id)
+                    print('Sending continue constant to conversation')
+                    response = bot.dialog.conversation(bot.dialog_id,
+                                                       CONTINUE_CONSTANT, bot.client_id,
+                                                       bot.conversation_id)
+                    text = response['response']
+            else:
+                text = ["Twitter don't pass minimum requirement of 100 words. Specify another account"]
     print('Sending a message')
     print(str(text))
     for message in text:
