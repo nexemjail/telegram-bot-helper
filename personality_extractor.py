@@ -22,3 +22,7 @@ def get_personality_vector(text):
     except wdc.WatsonException:
         return None
 
+
+if __name__ == '__main__':
+    text = open('texts/obama_text.txt', 'r').read()
+    print get_personality_vector(text)
