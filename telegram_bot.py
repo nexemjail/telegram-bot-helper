@@ -76,7 +76,7 @@ def _echo(bot, update):
 
         tweets = get_all_tweets(update.message.text[1:])
         if not tweets:
-            text = tweets
+            text = ['Parsing error occured!']
         else:
             print(tweets[:2])
             joined_text = ''.join(tweets)

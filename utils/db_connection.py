@@ -12,7 +12,7 @@ def _fetch_data_from_db(client, db_name):
 
 
 @connect
-def get_universities(client):
+def get_universities(client=None):
     """Function to get universities from db
     :return:dict with keys - map_id's and values - dicts with name and url of university
     """
@@ -25,7 +25,7 @@ def get_universities(client):
 
 
 @connect
-def get_portraits(client):
+def get_portraits(client=None):
     data = _fetch_data_from_db(client, PORTRAITS_DB_NAME)
     portraits = []
     universities = []
