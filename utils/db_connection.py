@@ -36,6 +36,6 @@ def get_portraits(client=None):
 
 
 if __name__ == '__main__':
-    print get_portraits()
+    print(get_portraits())
 
 
