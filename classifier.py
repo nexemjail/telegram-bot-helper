@@ -3,37 +3,27 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.externals import joblib
 import os
 from service_metadata import db_credentials
-from utils.create_database import select_university_and_features
 import numpy as np
+from utils.db_connection import get_portraits, get_universities
 
 PATH = 'classifier/knn'
 
-def repare_data():
-    pass
-
 
 def learn():
-
-    portraits, map_ids, universities = select_university_and_features()
-
-    n
-
+    portraits, university_map_ids = get_portraits()
     knn = KNeighborsClassifier()
-    # knn.fit()
+    knn.fit(portraits, university_map_ids)
     joblib.dump(knn, os.path.join(PATH, 'knn_classifier.jbl'))
 
 
 def classify(vector):
-
-    knn = joblib.load(os.path.join(PATH,'knn_classifier.jbl'))
-    print(knn)
-
-    # knn.predict()
-    pass
-
+    universities = get_universities()
+    knn = joblib.load(os.path.join(PATH, 'knn_classifier.jbl'))
+    prediction = knn.predict(vector)[0]
+    return universities[prediction]
 
 if __name__ == '__main__':
-    learn()
-    classify(None)
+    # learn()
+    print(classify(np.array([0.5]*52)))
 
 
