@@ -20,7 +20,7 @@ function get_PI_from_text(text){
 			else{
 				result = myLib.PI_to_array(resp);
 			};
-		};
+		})
 	);
 };
 
