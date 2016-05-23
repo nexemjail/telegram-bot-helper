@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "node-twitter-api": "^1.7.2",
+    "q": "^1.4.1",
     "watson-developer-cloud": "^1.2.5"
   }
 }
